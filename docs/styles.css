@@ -197,3 +197,64 @@ mark {
     padding: 0.1em 0.2em;
     border-radius: 2px;
 }
+
+/* App Promotion Styles */
+.app-promo {
+    background: transparent; /* Make container transparent */
+    border-radius: 8px;
+    padding: 0; /* Remove padding */
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: none; /* Remove container shadow */
+    border: none; /* Remove container border */
+}
+
+.app-promo h3 {
+    color: #228be6;
+    margin-top: 0;
+}
+
+.app-promo p {
+    margin-bottom: 1rem;
+}
+
+.app-icon {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 0; /* Remove rounded corners */
+    border: none; /* Explicitly remove any border */
+    box-shadow: none; /* Remove shadow effect */
+    transition: transform 0.3s ease;
+    display: block; /* Ensures proper centering */
+}
+
+.app-icon:hover {
+    transform: scale(1.05);
+}
+
+.download-button {
+    display: inline-block;
+    background: #228be6;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background: #1971c2;
+}
+
+/* Position for desktop */
+@media (min-width: 769px) {
+    .sidebar-promo {
+        position: fixed;
+        bottom: 2rem;
+        left: 1rem;
+        width: calc(280px - 2rem); /* Sidebar width minus padding */
+    }
+}
